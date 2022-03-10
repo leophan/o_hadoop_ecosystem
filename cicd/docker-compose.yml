@@ -55,7 +55,7 @@ services:
       - SPARK_SSL_ENABLED=no
     mem_limit: 2000mb
   cassandra:
-    image: docker.io/bitnami/cassandra:4.0.3
+    image: docker.io/cassandra:4.0.3
     ports:
       - "7000:7000"
       - "9042:9042"
