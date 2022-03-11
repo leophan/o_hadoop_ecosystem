@@ -62,10 +62,8 @@ services:
     volumes:
       - "cassandra_data:/bitnami/cassandra"
     environment:
-      - CASSANDRA_SEEDS=cassandra
       - CASSANDRA_PASSWORD_SEEDER=yes
       - CASSANDRA_PASSWORD=cassandra
-    mem_limit: 6000mb
   solr:
     image: docker.io/bitnami/solr:8.11.1
     ports:
